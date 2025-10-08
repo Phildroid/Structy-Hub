@@ -6,7 +6,7 @@ def minimum_island(grid):
     for c in range(len(grid[0])):
       current_island = explore_len(grid, r, c, visited)
       if current_island > 0:
-        min_size = min(min_size, current_size)
+        min_size = min(min_size, current_island)
   return min_size
 
 def explore_len(grid, r, c, visited):
